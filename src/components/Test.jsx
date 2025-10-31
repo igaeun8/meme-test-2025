@@ -17,8 +17,23 @@ function Test({ onComplete }) {
       (opt) => opt.id === optionId
     )?.isCorrect
 
-    const newAnswers = [...selectedAnswers, { questionId: currentQuestion.id, optionId, isCorrect }]
+    // 기존 답변이 있으면 업데이트, 없으면 추가
+    const existingAnswerIndex = selectedAnswers.findIndex(
+      (answer) => answer.questionId === currentQuestion.id
+    )
+    
+    let newAnswers
+    if (existingAnswerIndex >= 0) {
+      // 기존 답변 업데이트
+      newAnswers = [...selectedAnswers]
+      newAnswers[existingAnswerIndex] = { questionId: currentQuestion.id, optionId, isCorrect }
+    } else {
+      // 새 답변 추가
+      newAnswers = [...selectedAnswers, { questionId: currentQuestion.id, optionId, isCorrect }]
+    }
+    
     setSelectedAnswers(newAnswers)
+    setShowExplanation(true)
     
     // 정답 선택 후 바로 다음 문제로 이동
     setTimeout(() => {
@@ -81,8 +96,11 @@ function Test({ onComplete }) {
 
         <div className="options-container">
           {currentQuestion.options.map((option) => {
-            const isSelected = selectedAnswers[currentQuestionIndex]?.optionId === option.id
-            // const showResult = showExplanation && isSelected // explanation 사용 안 함
+            // 현재 문제의 답변을 questionId로 찾기
+            const currentAnswer = selectedAnswers.find(
+              (answer) => answer.questionId === currentQuestion.id
+            )
+            const isSelected = currentAnswer?.optionId === option.id
             const isCorrect = option.isCorrect
 
             return (
