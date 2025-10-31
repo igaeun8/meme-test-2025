@@ -63,7 +63,7 @@ function Test({ onComplete }) {
           {currentQuestion.image && (
             <div className="question-image-container">
               <img 
-                src={encodeURI(currentQuestion.image)} 
+                src={encodeURI(import.meta.env.BASE_URL + currentQuestion.image.replace(/^\//, ''))} 
                 alt="문제 이미지" 
                 className="question-image"
                 onError={(e) => {
