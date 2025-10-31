@@ -1,0 +1,16 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+}
+
