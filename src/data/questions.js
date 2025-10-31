@@ -4,7 +4,7 @@ export const questions = [
     id: 1,
     type: 'fill-blank',
     question: '리얼 "___"한 상황에서 빈칸에 들어갈 말은?',
-    image: '/images/허거덩.png',
+    image: '/images/awkward_meme.png',
     options: [
       { id: 'a', text: '허탈하다 ', isCorrect: false },
       { id: 'b', text: '허겁지겁', isCorrect: false },
@@ -17,7 +17,7 @@ export const questions = [
     id: 2,
     type: 'multiple-choice',
     question: '다음 중 사진 속 캐릭터의 이름은?',
-    image: '/images/트랄라레로.png',
+    image: '/images/tralalalero.png',
     options: [
       { id: 'a', text: '퉁 퉁 퉁 퉁 퉁 사후르', isCorrect: false },
       { id: 'b', text: '봄바르디로 크로코딜로', isCorrect: false },
@@ -82,7 +82,7 @@ export const questions = [
     id: 7,
     type: 'multiple-choice',
     question: '사진 속 남자가 부르는 노래는?',
-    image: '/images/대나무행주.png',
+    image: '/images/bamboo_handcloth.png',
     options: [
       { id: 'a', text: '대나무 행주', isCorrect: true },
       { id: 'b', text: '행주 행주', isCorrect: false },
@@ -110,7 +110,7 @@ export const questions = [
     id: 9,
     type: 'multiple-choice',
     question: '다음 사진의 대사를 고르시오: "당장 에어컨 ___ 냉방으로 틀어"',
-    image: '/images/에어컨.png',
+    image: '/images/aircon.png',
     options: [
       { id: 'a', text: '최대', isCorrect: false },
       { id: 'b', text: '터보', isCorrect: false },
@@ -148,7 +148,7 @@ export const questions = [
     id: 12,
     type: 'multiple-choice',
     question: '사진 속 빈 말풍선에 들어갈 대사는?',
-    image: '/images/더부리부리.png',
+    image: '/images/deoburiburi.png',
     options: [
       { id: 'a', text: '어떻게 춥겠다..', isCorrect: false },
       { id: 'b', text: '이불이 없다고?', isCorrect: false },
