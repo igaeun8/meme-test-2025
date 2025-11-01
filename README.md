@@ -1,7 +1,8 @@
 # 미완성...ing
 
 ## 2025 밈잘알 테스트 🎭
-2025년 한국 인터넷 밈을 테스트하는 재미있는 퀴즈 앱입니다!
+2025년 한국 인터넷 밈을 테스트하는 재미있는 퀴즈 앱
+링크 : https://igaeun8.github.io/meme-test-2025/
 <img width="915" height="599" alt="image" src="https://github.com/user-attachments/assets/bd021a4c-bf57-4cc7-a5a3-15b67f26aace" />
 
 ## 특징
